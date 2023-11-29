@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val bitmap = BitmapFactory.decodeResource(
             resources,
             R.drawable.ttt
-        ) // Substitua "sua_imagem" pelo ID da sua imagem no diretório drawable
+        ) // Substitua imagem no diretório drawable
         val pieces = splitImage(bitmap, tamanhoPuzzle, tamanhoPuzzle)
 
         // Criar os botões com as imagens das peças
@@ -83,7 +83,7 @@ private fun splitImage(image: Bitmap, rows: Int, cols: Int): MutableList<Bitmap>
                         // Atualizar a referência ao botão vazio
                         botaoVazio = botao
 
-                        
+
                         Toast.makeText(this, "$index", Toast.LENGTH_SHORT).show()
                     }
 
